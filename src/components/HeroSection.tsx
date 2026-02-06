@@ -41,7 +41,7 @@ const HeroSection = () => {
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: "0.6s" }}>
           <a 
-            href="https://x.com/MyDoge" 
+            href="https://x.com/Dogeondollar"
             target="_blank" 
             rel="noopener noreferrer"
             className="bg-gradient-gold text-primary-foreground px-8 py-4 rounded-full font-display font-bold text-lg hover:opacity-90 transition-all shadow-gold hover:scale-105"

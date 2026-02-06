@@ -31,7 +31,7 @@ const CTASection = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="https://x.com/MyDoge" 
+              href="https://x.com/Dogeondollar"
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-gradient-gold text-primary-foreground px-10 py-5 rounded-full font-display font-bold text-xl hover:opacity-90 transition-all shadow-gold hover:scale-105 flex items-center justify-center gap-3"
@@ -42,7 +42,7 @@ const CTASection = () => {
               Join on X
             </a>
             <a 
-              href="https://x.com/MyDoge" 
+              href="https://x.com/Dogeondollar"
               target="_blank" 
               rel="noopener noreferrer"
               className="border-2 border-primary text-primary px-10 py-5 rounded-full font-display font-bold text-xl hover:bg-primary/10 transition-all hover:scale-105"

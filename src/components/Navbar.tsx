@@ -29,7 +29,7 @@ const Navbar = () => {
         </div>
 
         <a 
-          href="https://x.com/MyDoge" 
+          href="https://x.com/Dogeondollar"
           target="_blank" 
           rel="noopener noreferrer"
           className="bg-gradient-gold text-primary-foreground px-5 py-2 rounded-full font-display font-semibold text-sm hover:opacity-90 transition-opacity shadow-gold-sm hover:shadow-gold"
