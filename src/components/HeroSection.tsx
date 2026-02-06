@@ -40,27 +40,20 @@ const HeroSection = () => {
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: "0.6s" }}>
-          <a 
+          <a
             href="https://x.com/Dogeondollar"
-            target="_blank" 
+            target="_blank"
             rel="noopener noreferrer"
             className="bg-gradient-gold text-primary-foreground px-8 py-4 rounded-full font-display font-bold text-lg hover:opacity-90 transition-all shadow-gold hover:scale-105"
           >
             Join the Community
           </a>
-          <a 
+          <a
             href="#what"
             className="border-2 border-primary text-primary px-8 py-4 rounded-full font-display font-bold text-lg hover:bg-primary/10 transition-all hover:scale-105"
           >
             See the Mission
           </a>
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 rounded-full border-2 border-muted-foreground flex justify-center pt-2">
-            <div className="w-1 h-2 bg-primary rounded-full" />
-          </div>
         </div>
       </div>
     </section>
