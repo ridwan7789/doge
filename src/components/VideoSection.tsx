@@ -1,8 +1,16 @@
+import { useInView } from "@/hooks/useInView";
+
 const VideoSection = () => {
+  const { ref, isInView } = useInView();
+
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="py-24 relative overflow-hidden" ref={ref}>
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        <div
+          className={`text-center mb-12 transition-all duration-700 ${
+            isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          }`}
+        >
           <h2 className="font-display text-4xl md:text-5xl font-bold mb-4">
             The <span className="text-gradient-gold">Movement</span> in Motion
           </h2>
@@ -11,12 +19,16 @@ const VideoSection = () => {
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto">
+        <div
+          className={`max-w-3xl mx-auto transition-all duration-700 ${
+            isInView ? "opacity-100 scale-100" : "opacity-0 scale-95"
+          }`}
+        >
           <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-border/50">
-            <video 
-              autoPlay 
-              loop 
-              muted 
+            <video
+              autoPlay
+              loop
+              muted
               playsInline
               className="w-full h-auto"
             >

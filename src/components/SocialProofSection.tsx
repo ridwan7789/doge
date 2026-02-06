@@ -1,3 +1,4 @@
+import { useInView } from "@/hooks/useInView";
 import tweetMyDoge1 from "@/assets/tweet-mydoge-1.jpeg";
 import tweetDogeDesigner from "@/assets/tweet-dogedesigner.jpeg";
 import tweetHodl from "@/assets/tweet-hodl.jpeg";
@@ -39,10 +40,16 @@ const tweets = [
 ];
 
 const SocialProofSection = () => {
+  const { ref, isInView } = useInView();
+
   return (
-    <section id="community" className="py-24 relative">
+    <section id="community" className="py-24 relative" ref={ref}>
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div
+          className={`text-center mb-16 transition-all duration-700 ${
+            isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          }`}
+        >
           <h2 className="font-display text-4xl md:text-5xl font-bold mb-4">
             The <span className="text-gradient-gold">Community</span> Speaks
           </h2>
@@ -58,10 +65,13 @@ const SocialProofSection = () => {
               href={tweet.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="glass-card rounded-2xl overflow-hidden hover-glow transition-transform hover:scale-105 group"
+              className={`glass-card rounded-2xl overflow-hidden hover-glow transition-all duration-700 hover:scale-105 group ${
+                isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+              }`}
+              style={{ transitionDelay: isInView ? `${index * 50}ms` : "0ms" }}
             >
-              <img 
-                src={tweet.image} 
+              <img
+                src={tweet.image}
                 alt={tweet.alt}
                 className="w-full h-auto"
               />
