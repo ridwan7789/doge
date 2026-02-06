@@ -36,7 +36,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="https://t.me/Doge_onedollar"
+                href="https://t.me/Doge_1dollar"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
