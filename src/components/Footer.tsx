@@ -49,9 +49,9 @@ const Footer = () => {
             <a href="#community" className="text-muted-foreground hover:text-foreground transition-colors">
               Community
             </a>
-            <a 
-              href="https://bitcoinworld.co.in/dogecoin-price-prediction-2026-2030-dollar-6/" 
-              target="_blank" 
+            <a
+              href="https://bitcoinworld.co.in/dogecoin-price-prediction-2026-2030-dollar-6/"
+              target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
@@ -59,11 +59,19 @@ const Footer = () => {
             </a>
           </div>
 
+          {/* Contract Address */}
+          <div className="text-center mb-6">
+            <p className="text-sm font-semibold text-foreground mb-2">DOGE$1 CA:</p>
+            <p className="text-xs font-mono bg-muted px-3 py-2 rounded-md max-w-md mx-auto break-words">
+              Fgb17HDGqXa9ojTjmgLmqsnjymYs7h9uJ27pCp7Cpump
+            </p>
+          </div>
+
           {/* Disclaimer */}
           <div className="text-center border-t border-border/50 pt-8">
             <p className="text-xs text-muted-foreground mb-4 max-w-2xl mx-auto leading-relaxed">
-              ⚠️ <span className="font-semibold">Important Disclaimer:</span> Doge $1 is not affiliated with Dogecoin Core, the Dogecoin Foundation, or any official Dogecoin entities. 
-              This is a community movement and meme culture project. No guarantees. No promises. Not financial advice. 
+              ⚠️ <span className="font-semibold">Important Disclaimer:</span> Doge $1 is not affiliated with Dogecoin Core, the Dogecoin Foundation, or any official Dogecoin entities.
+              This is a community movement and meme culture project. No guarantees. No promises. Not financial advice.
               Cryptocurrency investments carry significant risk.
             </p>
             <p className="text-xs text-muted-foreground">

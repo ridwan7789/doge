@@ -38,6 +38,14 @@ const HeroSection = () => {
           A community-driven movement supporting Dogecoin's journey toward $1.
         </p>
 
+        {/* Contract Address */}
+        <div className="mb-8 animate-fade-in" style={{ animationDelay: "0.5s" }}>
+          <p className="text-sm font-semibold text-foreground mb-2">DOGE$1 CA:</p>
+          <p className="text-xs font-mono bg-muted px-3 py-2 rounded-md max-w-md mx-auto break-words">
+            Fgb17HDGqXa9ojTjmgLmqsnjymYs7h9uJ27pCp7Cpump
+          </p>
+        </div>
+
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: "0.6s" }}>
           <a
